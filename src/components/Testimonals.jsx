@@ -1,37 +1,40 @@
-import { useState } from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; 
+import { useState } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import TextGradient from "./ui/TextGradiant";
 
 const testimonials = [
   {
-    name: 'Nome Sobrenome',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.',
+    name: "Nome Sobrenome",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.",
     rating: 5,
   },
   {
-    name: 'Nome Sobrenome',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.',
+    name: "Nome Sobrenome",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.",
     rating: 5,
   },
   {
-    name: 'Nome Sobrenome',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada vehicula varius.',
+    name: "Nome Sobrenome",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada vehicula varius.",
     rating: 5,
   },
 ];
 
 export default function Testimonials() {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0); //0
 
-  const prev = () => setIndex((index - 1 + testimonials.length) % testimonials.length);
-  const next = () => setIndex((index + 1) % testimonials.length);
+  const prev = () =>
+    setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length); //clica sub - 1 (valor atual) -> ASYNC [EXECUCOES...]
+  const next = () => setIndex((prev) => (prev + 1) % testimonials.length); //clica add + 1 (valor atual) -> ASYNC
 
   return (
     <section className="py-16 px-4 text-center bg-gray-50 text-gray-900 overflow-hidden">
       <h2 className="text-3xl md:text-4xl font-semibold">
-        Quem escolhe a Modifique, <span className="text-red-700 font-bold">recomenda</span>
+        Quem escolhe a Modifique, <TextGradient word="recomenda" />
       </h2>
       <p className="text-gray-600 mt-2 mb-10">
-        Confira o que nossos pacientes têm a dizer sobre seus resultados e experiências.
+        Confira o que nossos pacientes têm a dizer sobre seus resultados e
+        experiências.
       </p>
 
       <div className="relative max-w-4xl mx-auto">
@@ -55,7 +58,9 @@ export default function Testimonials() {
                 <div className="bg-white shadow-md rounded-xl p-6 max-w-md text-center">
                   <div className="flex justify-center mb-2">
                     {Array.from({ length: t.rating }).map((_, i) => (
-                      <span key={i} className="text-orange-400 text-xl">★</span>
+                      <span key={i} className="text-orange-400 text-xl">
+                        ★
+                      </span>
                     ))}
                   </div>
                   <p className="italic text-sm md:text-base">{t.text}</p>
@@ -81,7 +86,9 @@ export default function Testimonials() {
         {testimonials.map((_, i) => (
           <span
             key={i}
-            className={`h-2 w-2 rounded-full ${i === index ? 'bg-orange-500' : 'bg-gray-300'}`}
+            className={`h-2 w-2 rounded-full ${
+              i === index ? "bg-orange-500" : "bg-gray-300"
+            }`}
           />
         ))}
       </div>

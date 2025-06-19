@@ -7,22 +7,18 @@ import Results from "./components/Results";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonals";
 
-
 function App() {
-  
   return (
-    <div>
-
+    <>
       <NavBar />
       <PromoSection />
       <Results />
       <About />
       <Services />
-      <Testimonials />  
+      <Testimonials />
       <ContactForm />
       <Footer />
-    </div>
-
+    </>
   );
 }
 
