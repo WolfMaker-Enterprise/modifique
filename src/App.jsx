@@ -6,6 +6,7 @@ import PromoSection from "./components/PromoSection";
 import Results from "./components/Results";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonals";
+import Our from "./components/Our";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <PromoSection />
       <Results />
       <About />
+      <Our />
       <Services />
       <Testimonials />
       <ContactForm />

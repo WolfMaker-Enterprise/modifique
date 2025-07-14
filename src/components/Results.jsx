@@ -1,12 +1,7 @@
-import smileImg from "../assets/smile.png";
 import TextGradient from "./ui/TextGradiant";
 
 function Results() {
-  const images = [
-    { id: 1, src: smileImg, alt: "Antes e Depois 1" },
-    { id: 2, src: smileImg, alt: "Antes e Depois 2" },
-    { id: 3, src: smileImg, alt: "Antes e Depois 3" },
-  ];
+  const images = [];
 
   return (
     <section id="resultados" className="py-16 bg-white text-center">

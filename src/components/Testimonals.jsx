@@ -1,22 +1,28 @@
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import TextGradient from "./ui/TextGradiant";
+import rafaelImg from "../assets/rafaelImg.jpg";
+import marianaImg from "../assets/marianaImg.jpg";
+import julianaImg from "../assets/julianaImg.jpg";
 
 const testimonials = [
   {
-    name: "Nome Sobrenome",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.",
+    name: "Rafael Mendes",
+    text: "Simplesmente sensacional! Cheguei com medo de dentista e saí com vontade de voltar 😂. A equipe é super acolhedora, o ambiente é tranquilo e o atendimento foi rápido e eficiente. A dentista foi muito cuidadosa e explicou tudo com paciência. Agora meu sorriso tá em dia e sem traumas! Recomendo demais!",
     rating: 5,
+    image: rafaelImg,
   },
   {
-    name: "Nome Sobrenome",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.",
+    name: "Mariana Costa",
+    text: "Fiquei encantada com o atendimento da clínica! Desde a recepção até o momento do atendimento com a dentista, tudo foi feito com muito cuidado e profissionalismo. Me senti segura e bem orientada durante todo o processo. Com certeza voltarei e indicarei para amigos e familiares. Parabéns pelo excelente trabalho!",
     rating: 5,
+    image: marianaImg,
   },
   {
-    name: "Nome Sobrenome",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada vehicula varius.",
+    name: "Juliana Ribeiro",
+    text: "Experiência maravilhosa! Fui muito bem atendida desde o agendamento até o final do tratamento. A clínica é super organizada, os profissionais são atenciosos e demonstram muito conhecimento. Fiz limpeza e clareamento, e o resultado ficou incrível! Estou muito satisfeita e com o sorriso renovado. Super indico!",
     rating: 5,
+    image: julianaImg,
   },
 ];
 
@@ -28,7 +34,10 @@ export default function Testimonials() {
   const next = () => setIndex((prev) => (prev + 1) % testimonials.length); //clica add + 1 (valor atual) -> ASYNC
 
   return (
-    <section className="py-16 px-4 text-center bg-gray-50 text-gray-900 overflow-hidden">
+    <section
+      id="depoimentos"
+      className="py-16 px-4 text-center bg-gray-50 text-gray-900 overflow-hidden"
+    >
       <h2 className="text-3xl md:text-4xl font-semibold">
         Quem escolhe a Modifique, <TextGradient word="recomenda" />
       </h2>
@@ -65,7 +74,11 @@ export default function Testimonials() {
                   </div>
                   <p className="italic text-sm md:text-base">{t.text}</p>
                   <div className="mt-6 flex flex-col items-center">
-                    <div className="w-10 h-10 rounded-full bg-gray-300 mb-2" />
+                    <img
+                      src={t.image}
+                      alt={`Foto de ${t.name}`}
+                      className="w-10 h-10 rounded-full object-cover mb-2"
+                    />
                     <p className="text-sm font-medium">{t.name}</p>
                   </div>
                 </div>
