@@ -8,7 +8,7 @@ export default function Services() {
     <section id="servicos" className="bg-[#FFF1F4] py-10 px-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-12">
         {/* Imagem da doutora */}
-        <div className="relative w-full max-w-[320px] h-[400px] rounded-3xl overflow-hidden flex-shrink-0 mx-auto md:mx-0">
+        <div className="relative w-full max-w-[320px] h-[400px] rounded-3xl  overflow-visible flex-shrink-0 mx-auto md:mx-0">
           <img
             src={NurseBackground}
             alt="Fundo da Doutora"

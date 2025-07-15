@@ -15,7 +15,7 @@ function NavBar() {
   return (
     <nav
       id="inicio"
-      className="relative bg-gray-50 border-b border-gray-200 md:fixed md:top-0 md:left-0 md:right-0 md:z-50"
+      className="bg-gray-50 border-b border-gray-200 fixed top-0 left-0 right-0 z-50 md:relative md:z-0"
     >
       <div className="max-w-screen-xl mx-auto flex items-center justify-between py-4 px-4 sm:px-6">
         <div className="flex items-center">

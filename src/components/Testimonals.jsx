@@ -36,7 +36,7 @@ export default function Testimonials() {
   return (
     <section
       id="depoimentos"
-      className="py-16 px-4 text-center bg-gray-50 text-gray-900 overflow-hidden"
+      className="py-16 px-4 text-center bg-gray-50 text-gray-900  overflow-visible"
     >
       <h2 className="text-3xl md:text-4xl font-semibold">
         Quem escolhe a Modifique, <TextGradient word="recomenda" />

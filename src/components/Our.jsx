@@ -39,7 +39,7 @@ const Our = () => {
             key={index}
             className="flex flex-col justify-between text-center h-full"
           >
-            <div className="bg-[#f5f8fb] rounded-xl mb-6 w-full sm:max-w-[240px] mx-auto min-h-[320px] flex items-center justify-center overflow-hidden">
+            <div className="bg-[#f5f8fb] rounded-xl mb-6 w-full sm:max-w-[240px] mx-auto min-h-[320px] flex items-center justify-center overflow-visible">
               <img
                 src={specialist.image}
                 alt={specialist.name}
@@ -60,7 +60,7 @@ const Our = () => {
 
         {/* Card da equipe com logo abaixo */}
         <div className="flex flex-col justify-between text-center h-full">
-          <div className="rounded-xl mb-2 w-full sm:max-w-[240px] mx-auto min-h-[320px] flex items-center justify-center overflow-hidden">
+          <div className="rounded-xl mb-2 w-full sm:max-w-[240px] mx-auto min-h-[320px] flex items-center justify-center  overflow-visible">
             <img
               src={equipe}
               alt="Equipe Modifique Odontologia"

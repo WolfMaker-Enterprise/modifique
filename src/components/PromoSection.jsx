@@ -5,7 +5,7 @@ function PromoSection() {
   return (
     <section
       id="inicio"
-      className="text-center px-4 py-16 bg-white pt-0 md:pt-32"
+      className="text-center px-4 py-16 bg-white pt-20 md:pt-32 scroll-mt-16"
     >
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-gray-900 max-w-[90%] sm:max-w-[580px] mx-auto">
         Seu sorriso mais <TextGradient word="bonito e confiante" /> começa aqui
