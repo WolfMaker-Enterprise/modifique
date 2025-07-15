@@ -6,27 +6,27 @@ function About() {
   return (
     <section
       id="sobre"
-      className="relative text-white bg-white flex flex-col md:flex-row items-end"
+      className="relative h-[860px] text-white bg-white flex items-end"
     >
       <div
-        className="relative z-10 w-full flex items-center px-4 sm:px-6 md:px-8 py-16 md:py-0"
+        className="relative z-10 w-full h-[560px] flex items-center px-4 md:px-8"
         style={{
           backgroundImage: `url(${backgroundRed})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="w-full md:w-[60%] max-w-[600px] flex flex-col gap-4 ml-auto md:ml-40">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
+        <div className="md:w-[60%] max-w-[600px] flex flex-col gap-4 ml-auto md:ml-40">
+          <h2 className="text-3xl md:text-4xl font-semibold">
             Sobre a Modifique
           </h2>
 
-          <p className="text-sm sm:text-base leading-relaxed">
+          <p className="text-sm md:text-base leading-relaxed">
             Somos uma equipe de profissionais dedicados e apaixonados pelo que
             fazemos. Acreditamos no poder do atendimento humanizado para
             transformar experiências e criar vínculos de confiança.
           </p>
-          <p className="text-sm sm:text-base leading-relaxed">
+          <p className="text-sm md:text-base leading-relaxed">
             Nosso DNA é acolher cada paciente com empatia, atenção e respeito,
             oferecendo um ambiente seguro e tranquilo. Da primeira consulta aos
             tratamentos mais avançados, colocamos você no centro de tudo. Nosso
@@ -52,13 +52,11 @@ function About() {
         </div>
       </div>
 
-      <div className="hidden md:flex relative w-full md:w-auto h-[300px] sm:h-[400px] md:h-auto justify-center md:justify-end">
-        <img
-          src={dentalProsthesis}
-          alt="Prótese Odontológica"
-          className="absolute bottom-0 right-0 h-full max-h-[600px] object-contain pointer-events-none select-none"
-        />
-      </div>
+      <img
+        src={dentalProsthesis}
+        alt="Prótese Odontológica"
+        className="hidden md:block z-50 absolute bottom-0 right-0 h-[750px] object-contain pointer-events-none select-none"
+      />
     </section>
   );
 }
