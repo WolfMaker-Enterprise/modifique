@@ -1,18 +1,20 @@
-import NurseBackground from "../assets/back_ground_nurce_1.jpg";
 import NurseImage from "../assets/nurce_1.png";
+import NurceBg from "../assets/back_ground_nurce_1.jpg";
 import TextGradient from "./ui/TextGradiant";
 import ServiceItemCard from "./ServiceItemCard";
+
+console.log("NurseImage:", NurseImage, "NurceBg:", NurceBg); // Debug: veja se os caminhos estão corretos
 
 export default function Services() {
   return (
     <section id="servicos" className="bg-[#FFF1F4] py-10 px-4">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-12">
+      <div className="max-w-7xl mx-auto h-auto flex flex-col md:flex-row items-start gap-12">
         {/* Imagem da doutora */}
-        <div className="relative w-full max-w-[320px] h-[400px] rounded-3xl  overflow-visible flex-shrink-0 mx-auto md:mx-0">
+        <div className="relative w-full max-w-[320px] h-[400px] rounded-full overflow-visible flex-shrink-0 mx-auto md:mx-0">
           <img
-            src={NurseBackground}
+            src={NurceBg}
             alt="Fundo da Doutora"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover rounded-3xl"
           />
           <img
             src={NurseImage}
