@@ -1,5 +1,6 @@
 import { FaTooth } from "react-icons/fa";
 import TextGradient from "./ui/TextGradiant";
+import mobileVideo from "../assets/mobile.mp4";
 
 function PromoSection() {
   return (
@@ -32,6 +33,14 @@ function PromoSection() {
             <FaTooth className="text-white text-lg sm:text-xl" />
           </button>
         </a>
+      </div>
+      {/* Vídeo visível apenas no mobile */}
+      <div className="block md:hidden mb-5 pt-10">
+        <video
+          src={mobileVideo}
+          controls
+          className="w-full rounded-lg shadow-md"
+        />
       </div>
     </section>
   );

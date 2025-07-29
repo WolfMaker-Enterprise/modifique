@@ -15,8 +15,8 @@ function App() {
       <PromoSection />
       <Results />
       <About />
-      <Our />
       <Services />
+      <Our />
       <Testimonials />
       <ContactForm />
       <Footer />
