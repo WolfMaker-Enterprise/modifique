@@ -10,7 +10,7 @@ export default function Services() {
     <section id="servicos" className="bg-[#FFF1F4] py-10 px-4">
       <div className="max-w-7xl mx-auto h-auto flex flex-col md:flex-row items-start gap-12">
         {/* Imagem da doutora */}
-        <div className="relative w-full max-w-[320px] h-[400px] rounded-full overflow-visible flex-shrink-0 mx-auto md:mx-0">
+        <div className="hidden md:block relative w-full max-w-[320px] h-[400px] rounded-full overflow-visible flex-shrink-0 mx-auto md:mx-0">
           <img
             src={NurceBg}
             alt="Fundo da Doutora"

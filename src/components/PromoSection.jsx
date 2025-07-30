@@ -1,6 +1,7 @@
 import { FaTooth } from "react-icons/fa";
 import TextGradient from "./ui/TextGradiant";
 import mobileVideo from "../assets/mobile.mp4";
+import mobilePoster from "../assets/poster.jpg";
 
 function PromoSection() {
   return (
@@ -13,8 +14,10 @@ function PromoSection() {
       </h1>
 
       <p className="text-gray-600 mt-6 max-w-md sm:max-w-xl mx-auto text-base sm:text-lg">
-        Tecnologia de ponta, excelência técnica e atendimento personalizado para
-        transformar sua experiência odontológica em algo único.
+        Dentes amarelados, tortos ou faltando? Já não se sente tão confiante ao
+        sorrir? Na Modifique Odontologia, em Gravataí, você encontra soluções
+        estéticas completas para recuperar seu sorriso com naturalidade,
+        conforto e segurança.
       </p>
 
       <div className="flex justify-center w-full mt-8">
@@ -37,6 +40,7 @@ function PromoSection() {
       {/* Vídeo visível apenas no mobile */}
       <div className="block md:hidden mb-5 pt-10">
         <video
+          poster={mobilePoster}
           src={mobileVideo}
           controls
           className="w-full rounded-lg shadow-md"
