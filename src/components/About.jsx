@@ -6,7 +6,7 @@ function About() {
   return (
     <section
       id="sobre"
-      className="relative h-[860px] text-white bg-white flex items-end"
+      className="relative h-[680px] text-white bg-white flex items-end"
     >
       <div
         className="relative z-10 w-full h-[560px] flex items-center px-4 md:px-8"

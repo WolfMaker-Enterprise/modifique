@@ -17,7 +17,7 @@ function PromoSection() {
         Dentes amarelados, tortos ou faltando? Já não se sente tão confiante ao
         sorrir? Na Modifique Odontologia, em Gravataí, você encontra soluções
         estéticas completas para recuperar seu sorriso com naturalidade,
-        conforto e segurança.
+        conforto e segurança.
       </p>
 
       <div className="flex justify-center w-full mt-8">
@@ -39,12 +39,14 @@ function PromoSection() {
       </div>
       {/* Vídeo visível apenas no mobile */}
       <div className="block md:hidden mb-5 pt-10">
-        <video
-          poster={mobilePoster}
-          src={mobileVideo}
-          controls
-          className="w-full rounded-lg shadow-md"
-        />
+        <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
+          <video
+            poster={mobilePoster}
+            src={mobileVideo}
+            controls
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
       </div>
     </section>
   );

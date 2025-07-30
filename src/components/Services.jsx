@@ -24,7 +24,7 @@ export default function Services() {
         </div>
 
         {/* Texto e cards */}
-        <div className="w-full">
+        <div className="w-full flex flex-col items-center md:items-start">
           <div className="text-center md:text-left mb-6">
             <h2 className="text-2xl sm:text-3xl font-semibold text-zinc-800">
               Tratamentos de excelência com foco <br />
@@ -32,7 +32,7 @@ export default function Services() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-5 items-center text-center sm:text-left">
             <ServiceItemCard
               title="Implantes Dentários"
               description="Reposição definitiva de dentes com tecnologia e segurança."
